@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing'
 import "../globals.css";
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { SITE_URL, LOCALES } from '@/lib/site'
+import { SITE_URL, LOCALES, localeHref } from '@/lib/site'
 
 export async function generateMetadata({
   params,
@@ -20,15 +20,15 @@ export async function generateMetadata({
     title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}`])),
+      canonical: localeHref(locale),
+      languages: Object.fromEntries(LOCALES.map((l) => [l, localeHref(l)])),
     },
     openGraph: {
       type: 'website',
       siteName: 'AutoService',
       title: t('title'),
       description: t('description'),
-      url: `/${locale}`,
+      url: localeHref(locale),
       locale,
     },
   }
