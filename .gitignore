@@ -45,6 +45,6 @@ next-env.d.ts
 
 # Build and logs graphify
 graphify-out/
-*.json
-*.html
-*.md
+
+# JetBrains IDE (WebStorm / IntelliJ)
+.idea/

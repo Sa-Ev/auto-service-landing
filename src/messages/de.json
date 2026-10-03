@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "AutoService — Ihre Kfz-Werkstatt | Reparatur, Wartung, Diagnose",
+    "description": "Kfz-Service für Reparatur, Wartung und Diagnose. Termin online buchen oder Rückruf anfordern. Mo–Sa von 9:00 bis 20:00 Uhr."
+  },
   "hero": {
     "title": "Ihre Autoexperten — sicher, schnell und zuverlässig",
     "subtitle": "Inspektion, Reparatur oder HU — wir bringen Ihr Fahrzeug zurück auf die Straße",
@@ -53,7 +57,9 @@
           "Kontrolle der Wartungsintervalle"
         ]
       },
-      "suspension": { "title": "Fahrwerk und Bremssystem – prüfen, reparieren, warten" },
+      "suspension": {
+        "title": "Fahrwerk und Bremssystem – prüfen, reparieren, warten"
+      },
       "engine": {
         "title": "Motor – Diagnose und Reparatur",
         "slides": [
@@ -62,12 +68,24 @@
           "Motorüberholung"
         ]
       },
-      "steering":    { "title": "Lenkgetriebe – Diagnose und Reparatur" },
-      "aircon":      { "title": "Klimaanlage – Diagnose, Befüllung, Reparatur" },
-      "alignment":   { "title": "Spureinstellung und Achsvermessung" },
-      "tires":       { "title": "Reifenmontage und Auswuchten" },
-      "injector":    { "title": "Einspritzdüsenreinigung" },
-      "diagnostics": { "title": "Computerdiagnose" }
+      "steering": {
+        "title": "Lenkgetriebe – Diagnose und Reparatur"
+      },
+      "aircon": {
+        "title": "Klimaanlage – Diagnose, Befüllung, Reparatur"
+      },
+      "alignment": {
+        "title": "Spureinstellung und Achsvermessung"
+      },
+      "tires": {
+        "title": "Reifenmontage und Auswuchten"
+      },
+      "injector": {
+        "title": "Einspritzdüsenreinigung"
+      },
+      "diagnostics": {
+        "title": "Computerdiagnose"
+      }
     }
   },
   "booking": {
@@ -137,5 +155,49 @@
       "hours": "Mo–Sa: 9:00 – 20:00 Uhr"
     },
     "copyright": "AutoService © {year} — Alle Rechte vorbehalten"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "disclaimer": "Hinweis: Dies ist ein Demo-Projekt. Der folgende Text ist ein Platzhalter und keine rechtsgültige Datenschutzerklärung.",
+    "sections": {
+      "controller": {
+        "title": "Verantwortliche Stelle",
+        "body": "[Firmenname]\n[Straße und Hausnummer]\n[PLZ Ort]\nE-Mail: [E-Mail-Adresse]"
+      },
+      "data": {
+        "title": "Welche Daten wir verarbeiten",
+        "body": "Bei einer Terminbuchung oder einer Rückrufanfrage verarbeiten wir die von Ihnen angegebenen Daten — Name, Telefonnummer, E-Mail-Adresse und Angaben zum Fahrzeug — ausschließlich zur Bearbeitung Ihrer Anfrage."
+      },
+      "cookies": {
+        "title": "Cookies und Reichweitenmessung",
+        "body": "Diese Website setzt ausschließlich technisch notwendige Cookies ein. Eine Analyse des Nutzerverhaltens findet nicht statt."
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "body": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten sowie ein Beschwerderecht bei der zuständigen Aufsichtsbehörde."
+      }
+    }
+  },
+  "legalNotice": {
+    "title": "Impressum",
+    "disclaimer": "Hinweis: Dies ist ein Demo-Projekt. Die folgenden Angaben sind Platzhalter und beziehen sich nicht auf ein real existierendes Unternehmen.",
+    "sections": {
+      "provider": {
+        "title": "Angaben gemäß § 5 DDG",
+        "body": "[Firmenname]\n[Straße und Hausnummer]\n[PLZ Ort]\nVertreten durch: [Name]"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "body": "Telefon: [Telefonnummer]\nE-Mail: [E-Mail-Adresse]"
+      },
+      "responsible": {
+        "title": "Registereintrag und Umsatzsteuer",
+        "body": "Handelsregister: [Registergericht, HRB-Nummer]\nUmsatzsteuer-Identifikationsnummer: [USt-IdNr.]"
+      },
+      "liability": {
+        "title": "Haftung für Inhalte und Links",
+        "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten verantwortlich. Für die Inhalte verlinkter externer Seiten ist stets deren Betreiber verantwortlich."
+      }
+    }
   }
 }

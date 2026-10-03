@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "AutoService — Car Repair Shop | Repair, Maintenance, Diagnostics",
+    "description": "Car service for repair, maintenance and diagnostics. Book an appointment online or request a callback. Mon–Sat, 9:00 to 20:00."
+  },
   "hero": {
     "title": "Your Auto Experts — Safe, Fast and Reliable",
     "subtitle": "Inspection, repair or MOT — we'll get your car back on the road",
@@ -53,7 +57,9 @@
           "Service interval monitoring"
         ]
       },
-      "suspension": { "title": "Suspension & Brakes – inspection, repair, service" },
+      "suspension": {
+        "title": "Suspension & Brakes – inspection, repair, service"
+      },
       "engine": {
         "title": "Engine – Diagnostics & Repair",
         "slides": [
@@ -62,12 +68,24 @@
           "Engine overhaul"
         ]
       },
-      "steering":    { "title": "Steering Rack – Diagnostics & Repair" },
-      "aircon":      { "title": "Air Conditioning – Diagnostics, Refill, Repair" },
-      "alignment":   { "title": "Wheel Alignment" },
-      "tires":       { "title": "Tyre Fitting & Wheel Balancing" },
-      "injector":    { "title": "Fuel Injector Cleaning" },
-      "diagnostics": { "title": "Computer Diagnostics" }
+      "steering": {
+        "title": "Steering Rack – Diagnostics & Repair"
+      },
+      "aircon": {
+        "title": "Air Conditioning – Diagnostics, Refill, Repair"
+      },
+      "alignment": {
+        "title": "Wheel Alignment"
+      },
+      "tires": {
+        "title": "Tyre Fitting & Wheel Balancing"
+      },
+      "injector": {
+        "title": "Fuel Injector Cleaning"
+      },
+      "diagnostics": {
+        "title": "Computer Diagnostics"
+      }
     }
   },
   "booking": {
@@ -137,5 +155,49 @@
       "hours": "Mon–Sat: 9:00 – 20:00"
     },
     "copyright": "AutoService © {year} — All rights reserved"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "disclaimer": "Note: this is a demo project. The text below is a placeholder and not a legally binding privacy policy.",
+    "sections": {
+      "controller": {
+        "title": "Data controller",
+        "body": "[Company name]\n[Street and number]\n[Postcode, city]\nEmail: [email address]"
+      },
+      "data": {
+        "title": "What data we process",
+        "body": "When you book an appointment or request a callback we process the details you provide — name, phone number, email address and vehicle details — solely to handle your request."
+      },
+      "cookies": {
+        "title": "Cookies and analytics",
+        "body": "This website uses strictly necessary cookies only. No analysis of user behaviour takes place."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "You have the right to access, rectify, erase and restrict the processing of your data, as well as the right to lodge a complaint with the competent supervisory authority."
+      }
+    }
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "disclaimer": "Note: this is a demo project. The details below are placeholders and do not refer to a real company.",
+    "sections": {
+      "provider": {
+        "title": "Site owner",
+        "body": "[Company name]\n[Street and number]\n[Postcode, city]\nRepresented by: [name]"
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Phone: [phone number]\nEmail: [email address]"
+      },
+      "responsible": {
+        "title": "Register entry and VAT",
+        "body": "Commercial register: [court, HRB number]\nVAT identification number: [VAT ID]"
+      },
+      "liability": {
+        "title": "Liability for content and links",
+        "body": "As a service provider we are responsible for our own content on these pages. The operators of linked external sites are always responsible for their content."
+      }
+    }
   }
 }
