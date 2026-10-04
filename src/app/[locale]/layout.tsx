@@ -4,8 +4,12 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import "../globals.css";
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { SITE_URL, LOCALES, localeHref } from '@/lib/site'
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
 
 export async function generateMetadata({
   params,
@@ -46,6 +50,8 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound()
   }
+
+  setRequestLocale(locale)
 
   const messages = await getMessages()
 

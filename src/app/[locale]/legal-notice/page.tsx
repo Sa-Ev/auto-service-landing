@@ -1,10 +1,18 @@
+import { use } from 'react'
+import { setRequestLocale } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 const SECTIONS = ['provider', 'contact', 'responsible', 'liability'] as const
 
-export default function LegalNoticePage() {
+export default function LegalNoticePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = use(params)
+  setRequestLocale(locale)
   const t = useTranslations('legalNotice')
 
   return (

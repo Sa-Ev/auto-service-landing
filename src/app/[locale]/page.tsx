@@ -1,4 +1,6 @@
 // src/app/[locale]/page.tsx
+import { use } from 'react'
+import { setRequestLocale } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Header from '@/components/Header'
@@ -8,7 +10,13 @@ import ServicesSection from '@/components/ServicesSection'
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
 
-export default function Home() {
+export default function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = use(params)
+  setRequestLocale(locale)
   const t = useTranslations()
 
   return (
